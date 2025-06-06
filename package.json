@@ -2,7 +2,7 @@
   "name": "themillionseconds",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://fabelair.github.io/theMillionSeconds",
+  "homepage": "https://fabelair.github.io/theMillionSeconds.com",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
@@ -32,6 +32,6 @@
     "postcss": "^8.5.3",
     "react-router-dom": "^7.4.1",
     "tailwindcss": "^4.0.17",
-    "vite": "^6.2.0"
+    "vite": "^6.3.5"
   }
 }
