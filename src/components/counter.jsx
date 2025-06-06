@@ -26,7 +26,7 @@ const Counter = () => {
 
   return (
     <>
-    <h1 class="text-8xl font-bold">{countdown !== null ? countdown.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") : "Loading..."}</h1>
+    <h1 class="text-[900%] lg:text-8xl font-bold">{countdown !== null ? countdown.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") : "Loading..."}</h1>
     </>
   );
 };
