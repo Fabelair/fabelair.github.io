@@ -78,7 +78,7 @@ return (
                         <button class="lg:text-sm text-4xl mt-1 mb-1 ml-1 mr-1 rounded-xl bg-gray-200 hover:bg-blue-200" onClick={()=>{changeAmount(10)}}>10</button>
                         <button class="lg:text-sm text-4xl mt-1 mb-1 ml-1 mr-1 rounded-xl bg-gray-200 hover:bg-blue-200"onClick={()=>{changeAmount(30)}}>30</button>
                     </div>
-                    <input type="number"  value={amount} onChange={()=>{changeAmount()}} placeholder="Amount of seconds" id="amount" class="w-full lg:h-11 h-24 mt-12 lg:mt-1 mb-1 ring rounded p-4 lg:text-lg text-4xl"></input>
+                    <input type="number" inputmode="numeric" pattern="[0-9]*" value={amount} onChange={()=>{changeAmount()}} placeholder="Amount of seconds" id="amount" class="w-full lg:h-11 h-24 mt-12 lg:mt-1 mb-1 ring rounded p-4 lg:text-lg text-4xl"></input>
                 </div>
                 <h1 class="lg:text-lg text-2xl place-self-center mt-42 lg:mt-2 text-gray-500">Minimum: 5 | Maximum: 99999</h1>
                 <h1 class="lg:text-lg  text-4xl mt-5 text-gray-600">URL to an Image or gif</h1>
