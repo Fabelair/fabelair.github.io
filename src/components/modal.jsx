@@ -83,7 +83,7 @@ return (
                 <h1 class="place-self-center mt-2 text-gray-500">Minimum: 5 | Maximum: 99999</h1>
                 <h1 class="mt-5 text-gray-600">URL to an Image or gif</h1>
                 <input type="text" placeholder="https://www.gif.com" id="url" class="w-full h-6 mt-1 mb-1 ring rounded p-4" onChange={()=>{changeContent()}}></input>
-                <div class="ring mt-2 w-64 h-64 place-self-center">{content !== null ? <img class="object-cover h-full w-full" src={content} />:<h1 class="place-self-center font-bold text-center text-2xl ml-5 mr-5">Preview</h1>}</div>
+                <div class="ring grid mt-2 w-[100%] h-64 place-self-center">{content !== null ? <img class="object-cover h-64 w-[100%]" src={content} />:<h1 class="place-self-center font-bold text-center text-2xl ml-5 mr-5">Preview</h1>}</div>
                 <h1 class="text-gray-500 mt-5">Username</h1>
                 <input type="text" maxLength="16" placeholder="max 16 characters" id="username" class="w-full h-6 mt-1 mb-1 ring rounded p-4" onChange={()=>{changeContent()}}></input>
                 <div class="ring mt-5"></div>

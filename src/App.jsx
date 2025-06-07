@@ -16,7 +16,7 @@ function App() {
                 <div class=" place-self-center row-start-4 lg:row-start-3 lg:mb-8"><Counter/></div>
                 <div class=" lg:row-span-4 place-self-center mt-10 row-start-9 lg:row-start-5"><Content/></div>
                 <div class=" place-self-center row-start-14 lg:row-start-12 lg:mb-5"><Buy/></div>
-                <div class=" lg:row-span-3 row-span-8 place-self-center row-start-15 lg:row-start-15"><Liste/></div>
+                <div class=" lg:row-span-3 row-span-8 place-self-center row-start-16 lg:row-start-15"><Liste/></div>
               </div>
             }></Route>
       </Routes>
