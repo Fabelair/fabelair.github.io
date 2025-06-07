@@ -66,32 +66,32 @@ const Modal = ({isVisible, onClose,disconnect}) => {
     }
 return (
     <div className='fixed inset-0  flex grid backdrop-blur-sm' id="wrapper" onClick={handleClose}>
-        <div className="absolute w-112 ring-2 h-190 flex flex-col bg-white rounded-xl place-self-center shadow-xl" >
+        <div className="absolute w-170 h-350 lg:w-112 ring-2 lg:h-190 flex flex-col bg-white rounded-xl place-self-center shadow-xl" >
             <div class="grid grid-cols-8">
-                <h1 class="col-span-7 place-self-center text-4xl mt-2 font-bold">Purchase here!</h1>
-                <button onClick={()=>{onClose()}} class=" col-start-8  bg-red-400 rounded h-10 w-10 text-xl font-bold mr-5 mt-4 place-self-center">X</button>
+                <h1 class="col-span-7 place-self-center text-7xl lg:text-4xl mt-2 font-bold">Purchase here!</h1>
+                <button onClick={()=>{onClose()}} class=" col-start-8  bg-red-400 rounded h-16 lg:h-10 w-16 lg:w-10 lg:text-xl text-3xl font-bold mr-5 mt-4 place-self-center">X</button>
             </div>
-            <div class=" mt-5 h-full ml-5 mr-5 mb-5">
+            <div class="mt-18 lg:mt-5 h-full ml-5 mr-5 mb-5">
                 <div class=" h-26">
-                    <div class="h-13  grid grid-cols-3">
-                        <button class=" mt-1 mb-1 ml-1 mr-1 rounded-xl bg-gray-200 hover:bg-blue-200"onClick={()=>{changeAmount(5)}}>5</button>
-                        <button class=" mt-1 mb-1 ml-1 mr-1 rounded-xl bg-gray-200 hover:bg-blue-200" onClick={()=>{changeAmount(10)}}>10</button>
-                        <button class=" mt-1 mb-1 ml-1 mr-1 rounded-xl bg-gray-200 hover:bg-blue-200"onClick={()=>{changeAmount(30)}}>30</button>
+                    <div class="lg:h-13 h-26  grid grid-cols-3">
+                        <button class="lg:text-sm text-4xl mt-1 mb-1 ml-1 mr-1 rounded-xl bg-gray-200 hover:bg-blue-200"onClick={()=>{changeAmount(5)}}>5</button>
+                        <button class="lg:text-sm text-4xl mt-1 mb-1 ml-1 mr-1 rounded-xl bg-gray-200 hover:bg-blue-200" onClick={()=>{changeAmount(10)}}>10</button>
+                        <button class="lg:text-sm text-4xl mt-1 mb-1 ml-1 mr-1 rounded-xl bg-gray-200 hover:bg-blue-200"onClick={()=>{changeAmount(30)}}>30</button>
                     </div>
-                    <input type="number"  value={amount} onChange={()=>{changeAmount()}} placeholder="Amount of seconds" id="amount" class="w-full h-11 mt-1 mb-1 ring rounded p-4"></input>
+                    <input type="number"  value={amount} onChange={()=>{changeAmount()}} placeholder="Amount of seconds" id="amount" class="w-full lg:h-11 h-24 mt-12 lg:mt-1 mb-1 ring rounded p-4 lg:text-lg text-4xl"></input>
                 </div>
-                <h1 class="place-self-center mt-2 text-gray-500">Minimum: 5 | Maximum: 99999</h1>
-                <h1 class="mt-5 text-gray-600">URL to an Image or gif</h1>
-                <input type="text" placeholder="https://www.gif.com" id="url" class="w-full h-6 mt-1 mb-1 ring rounded p-4" onChange={()=>{changeContent()}}></input>
-                <div class="ring grid mt-2 w-[100%] h-64 place-self-center">{content !== null ? <img class="object-cover h-64 w-[100%]" src={content} />:<h1 class="place-self-center font-bold text-center text-2xl ml-5 mr-5">Preview</h1>}</div>
-                <h1 class="text-gray-500 mt-5">Username</h1>
-                <input type="text" maxLength="16" placeholder="max 16 characters" id="username" class="w-full h-6 mt-1 mb-1 ring rounded p-4" onChange={()=>{changeContent()}}></input>
+                <h1 class="lg:text-lg text-2xl place-self-center mt-42 lg:mt-2 text-gray-500">Minimum: 5 | Maximum: 99999</h1>
+                <h1 class="lg:text-lg  text-4xl mt-5 text-gray-600">URL to an Image or gif</h1>
+                <input type="text" placeholder="https://www.gif.com" id="url" class="lg:text-lg text-4xl w-full lg:h-6 h-24 mt-1 mb-1 ring rounded p-4" onChange={()=>{changeContent()}}></input>
+                <div class="ring grid mt-2 w-[100%] lg:h-64 h-120 place-self-center">{content !== null ? <img class="object-cover lg:h-64 h-120 w-[100%]" src={content} />:<h1 class="place-self-center font-bold text-center text-2xl ml-5 mr-5">Preview</h1>}</div>
+                <h1 class="lg:text-lg text-4xl text-gray-500 mt-5">Username</h1>
+                <input type="text" maxLength="16" placeholder="max 16 characters" id="username" class="w-full lg:h-6 h-18 lg:text-lg text-4xl mt-1 mb-1 ring rounded p-4" onChange={()=>{changeContent()}}></input>
                 <div class="ring mt-5"></div>
                 <div class="h-16 grid grid-cols-2">
-                    <button class="bg-green-300 w-32 h-10 place-self-center rounded font-bold text-2xl" onClick={()=>{pay()}}>PAY</button>
-                    <h1 class="place-self-center font-bold text-2xl">{amount} $ USD</h1>
+                    <button class="bg-green-300 lg:w-32 w-64 lg:h-10 h-20 lg:mt-0 mt-4 place-self-center rounded font-bold lg:text-2xl text-4xl" onClick={()=>{pay()}}>PAY</button>
+                    <h1 class="place-self-center font-bold lg:text-2xl text-4xl">{amount} $ USD</h1>
                 </div> 
-                {countdown==amount?<p class="text-green-600 text-sm mt-2">You are buying a bitcoin!</p>:<p class="text-gray-400 text-sm mt-2">You are not buying a bitcoin</p>}           
+                {countdown==amount?<p class="text-green-600 lg:text-sm text-lg lg:mt-1 mt-10">You are buying a bitcoin!</p>:<p class="text-gray-400 lg:text-sm text-lg lg:mt-1 mt-10">You are not buying a bitcoin</p>}           
             </div>
         </div>
     </div>
