@@ -2,7 +2,7 @@
   "name": "themillionseconds",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://fabelair.github.io/theMillionSeconds.com",
+  "homepage": "http://www.themillionseconds.com",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

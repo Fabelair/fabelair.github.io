@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 import { ghPages } from 'vite-plugin-gh-pages'
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/theMillionSeconds.com',
+  base: '',
   plugins: [react(),tailwindcss(),ghPages()],
 })
